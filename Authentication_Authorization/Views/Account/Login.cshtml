@@ -1,0 +1,16 @@
+﻿@model LoginModel
+<div class="container">
+    <h3>Login Here</h3><hr />
+    <form method="post" asp-action="Login">
+        <div class="row-cols pb-sm-0">
+            <label asp-for="UserName">Username</label>
+            <input type="text" asp-for="UserName"/>
+        </div>
+        <div class="row-cols pb-sm-0">
+            <label asp-for="Password">Password</label>
+            <input type="text" asp-for="Password"/>
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary right" style="position:relative;right:-198px"/>
+    </form>
+
+</div>
